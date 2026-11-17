@@ -14,13 +14,13 @@ Importer notre jeu de données **CCFr (bibliothèques françaises)**, déjà con
 ProjetDana/
 ├── README.md
 ├── data/
-│   └── bibliotheques.ttl
+│   └── ccfr_full.ttl
+│   └── CCFR_INSTITUTION_20260702.xml
 └── queries/
     ├── bibliotheques_regions.rq
     └── services_bibliotheques.rq
 ```
 
-Chaque membre doit disposer du même fichier `data/bibliotheques.ttl` et d'une instance fonctionnelle de Fuseki.
 
 ## 2. Démarrer Fuseki
 
@@ -48,10 +48,10 @@ Ouvrir **http://localhost:3030/** dans un navigateur. Garder le serveur en cours
 1. Ouvrir le dataset **`ccfr-bibliotheques`**.
 2. Aller dans **Add data** (ou **Upload data**, selon l'interface).
 3. Choisir le **Default graph**.
-4. Sélectionner `data/bibliotheques.ttl`.
+4. Sélectionner `data/ccfr_full.ttl`.
 5. Cliquer sur **Upload** et attendre la confirmation.
 
-**Important :** importer le fichier `.ttl`, et non le fichier XML d'origine. Pour recommencer avec un dataset vierge, supprimer les données existantes ou recréer le dataset.
+**Important :** importer le fichier `.ttl`. Pour recommencer avec un dataset vierge, supprimer les données existantes ou recréer le dataset.
 
 ## 5. Vérifier l'importation avec SPARQL
 
